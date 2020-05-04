@@ -14,9 +14,11 @@ body {
 }
 
 .dashboard {
+  position: absolute;
   width: 100%;
   top: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
   background-color: #f5f7ff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
