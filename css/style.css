@@ -1,4 +1,208 @@
+@font-face {
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+  font-family: Inter;
+}
+
 body {
-  background-color: #f33f23;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  font-family: Inter;
+  text-align: center;
+}
+
+.dashboard {
+  width: 100%;
+  top: 0;
+  padding-bottom: 30px;
+  background-color: #f5f7ff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+}
+
+.card {
+  width: 80%;
+  text-align: center;
+  margin: 60px auto;
+  background-color: #f0f2fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  border-top: 4px solid deepskyblue;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__info img {
+  margin: 7px;
+}
+
+.card__info span {
+  margin: 8px;
+  font-size: 14px;
+  color: #63687e;
+}
+
+.card__followers-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1db489;
+  font-weight: 700;
+}
+
+.card__followers-status img {
+  margin: 7px;
+}
+
+.big-text {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 15px auto 0 auto;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.faded-text {
+  color: #63687e;
+}
+
+.followers {
+  margin-top: -2px;
+  font-size: 1rem;
+  letter-spacing: 6px;
+}
+
+.followers .info p {
+  float: left;
+}
+
+.followers .info span {
+  float: right;
+}
+
+.overview-card {
+  margin: 60px auto;
+  padding: 15px;
+  width: 280px;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.overview-card .head span {
+  float: left;
+}
+
+.overview-card .head img {
+  float: right;
+}
+
+.overview-card .info {
+  margin-top: 60px;
+}
+
+.overview-card .info .info-num {
+  float: left;
+}
+
+.overview-card .info div .follower-status {
+  float: right;
+  padding: 5px;
+  color: #1db489;
+  font-weight: 700;
+}
+
+.overview-card .info div .follower-status img {
+  margin: 3px;
+}
+
+.info-num {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #ddd;
+  width: 80px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition-property: -webkit-box-pack;
+  transition-property: -webkit-box-pack;
+  transition-property: justify-content;
+  transition-property: justify-content, -webkit-box-pack, -ms-flex-pack;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.slider {
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
