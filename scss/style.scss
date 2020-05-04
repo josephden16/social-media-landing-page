@@ -1,6 +1,4 @@
 @import "config";
-@import "media";
-
 @mixin progress($color) {
     @if ($color == "green") {
         color: $lime-green;
@@ -24,23 +22,41 @@ body {
     position: absolute;
     width: 100%;
     top: 0; 
-    padding-bottom: 50px;
-    margin-bottom: 40px;
+    padding-bottom: 100px;
+    margin-bottom: 1140px;
     background-color: $very-pale-blue-bg-top;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: -1;
+
+    .text {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    hr {
+        width: 95%;
+        margin: 20px 8px;
+        border:0.3px solid $dark-grayish-blue-text;
+    }
 }
 
-.card {
-    width: 80%;
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+// card mixin
+@mixin card($color, $status) {
+    width: 180px;
     text-align: center;
     margin: 60px auto;
     background-color: $light-grayish-blue-card-bg;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 100px;
-    border-top: 4px solid $facebook;
+    border-top: 4px solid $color;
+    margin-top: 200px;
     &__info {
         display: flex;
         flex-direction: row;
@@ -65,12 +81,32 @@ body {
         flex-wrap: nowrap;
         text-align: center;
         justify-content: center;
-        color: $lime-green;
+        color: $status;
         font-weight: $font-weight-2;
         img {
             margin: 7px;
         }
     }
+}
+
+
+.facebook {
+    @include card($facebook, $lime-green);
+}
+
+.twitter {
+    @include card($twitter, $lime-green);
+    margin-top: 10px;
+}
+
+.instagram {
+    @include card($twitter, $lime-green);
+    margin-top: 10px;
+}
+
+.youtube {
+    @include card($youtube, $bright-red);
+    margin-top: 10px;
 }
 
 .big-text {
@@ -84,6 +120,7 @@ body {
 }
 .faded-text {
     color: $dark-grayish-blue-text;
+    font-weight: $font-weight-2;
 }
 
 .followers {
@@ -172,6 +209,6 @@ body {
     border-radius: 50%;
     display: inline-block;
 }
-
+@import "media";
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
