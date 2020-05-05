@@ -6,4 +6,67 @@
         display: flex;
         flex-direction: row;
     }
+
+    .overview-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .overview-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .instagram {
+        margin-top: 10px;
+        width: 50%;
+    }
+    .youtube {
+        margin-top: 10px;
+        width: 50%;
+
+    }
+    .twitter {
+        margin-top: 10px;
+        width: 50%;
+
+    }
+    .facebook {
+        width: 50%;
+    }
+
+    .overview-card {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .facebook {
+        width: 72%;
+    }
+    .twitter {
+        width: 72%;
+    }
+    .instagram {
+        width: 72%;
+    }
+    .youtube {
+        width: 72%;
+    }
+
+    .overview-container {
+        grid-template-columns: 100%;
+
+    }
+
+    .overview-card {
+        width: 75%;
+    }
 }

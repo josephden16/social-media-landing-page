@@ -15,15 +15,16 @@ body {
     box-sizing: border-box;
     background-color: $white-bg;
     font-family: Inter;
-    text-align: center;
 }
 
 .dashboard {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
     width: 100%;
-    top: 0; 
-    padding-bottom: 100px;
-    margin-bottom: 1140px;
+    top: 0;
+    padding-bottom: 150px;
     background-color: $very-pale-blue-bg-top;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -36,7 +37,7 @@ body {
     
     hr {
         width: 95%;
-        margin: 20px 8px;
+        margin: 10px 8px;
         border:0.3px solid $dark-grayish-blue-text;
     }
 }
@@ -45,13 +46,21 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    // position: absolute;
+    z-index: 1;
 }
+
+.overview-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 
 // card mixin
 @mixin card($color, $status) {
     width: 180px;
     text-align: center;
-    margin: 60px auto;
+    margin: 30px auto;
     background-color: $light-grayish-blue-card-bg;
     padding: 20px;
     border-radius: 5px;
@@ -96,17 +105,14 @@ body {
 
 .twitter {
     @include card($twitter, $lime-green);
-    margin-top: 10px;
 }
 
 .instagram {
     @include card($twitter, $lime-green);
-    margin-top: 10px;
 }
 
 .youtube {
     @include card($youtube, $bright-red);
-    margin-top: 10px;
 }
 
 .big-text {
@@ -140,9 +146,9 @@ body {
 }
 
 .overview-card {
-    margin: 60px auto;
+    margin: 20px auto;
     padding: 15px;
-    width: 280px;
+    width: 50%;
     background-color: $light-grayish-blue-card-bg;
     border-radius: 5px;
     height: 120px;
@@ -190,21 +196,20 @@ body {
 // toggle 
 .btn {
     background-color: #ddd;
-    width: 80px;
-    height: 35px;
+    width: 50px;
+    height: 20px;
     padding: 8px;
     border-radius: 60px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    transition-property: justify-content;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
 
 .slider {
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
