@@ -78,7 +78,7 @@ body {
 
 // card mixin
 @mixin card($color, $status) {
-    width: 180px;
+    width: 200px;
     text-align: center;
     margin: 30px auto;
     background-color: $light-grayish-blue-card-bg;
@@ -96,14 +96,13 @@ body {
             margin: 7px;
         }
         span {
-            // margin: auto;
             margin: 8px;
             font-size: 14px;
-            color: $dark-grayish-blue-text;
         }
     }
 
     &__followers-status {
+        padding-top: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -271,6 +270,7 @@ body {
 
 .username {
     font-weight: $font-weight-2;
+    color: $dark-grayish-blue-text;
 }
 
 // toggle

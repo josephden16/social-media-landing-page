@@ -88,7 +88,7 @@ body {
 }
 
 .facebook {
-  width: 180px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -121,10 +121,10 @@ body {
 .facebook__info span {
   margin: 8px;
   font-size: 14px;
-  color: #63687e;
 }
 
 .facebook__followers-status {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@ body {
 }
 
 .twitter {
-  width: 180px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -180,10 +180,10 @@ body {
 .twitter__info span {
   margin: 8px;
   font-size: 14px;
-  color: #63687e;
 }
 
 .twitter__followers-status {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +206,7 @@ body {
 }
 
 .instagram {
-  width: 180px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -239,10 +239,10 @@ body {
 .instagram__info span {
   margin: 8px;
   font-size: 14px;
-  color: #63687e;
 }
 
 .instagram__followers-status {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +265,7 @@ body {
 }
 
 .youtube {
-  width: 180px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -298,10 +298,10 @@ body {
 .youtube__info span {
   margin: 8px;
   font-size: 14px;
-  color: #63687e;
 }
 
 .youtube__followers-status {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +473,7 @@ body {
 
 .username {
   font-weight: 700;
+  color: #63687e;
 }
 
 .btn {
