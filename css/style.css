@@ -14,34 +14,54 @@ body {
 }
 
 .dashboard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  position: relative;
-  width: 100%;
-  top: 0;
-  padding-bottom: 150px;
-  background-color: #f5f7ff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   z-index: -1;
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 100px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background-color: #f5f7ff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.dashboard .text {
-  text-align: left;
-  padding: 8px;
+.dashboard .social {
+  padding: 20px;
 }
 
-.dashboard hr {
-  width: 95%;
-  margin: 10px 8px;
-  border: 0.3px solid #63687e;
+.dashboard .social h1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.dashboard .social p {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.dashboard .social div {
+  margin-top: 30px;
+}
+
+.dashboard .social div hr {
+  border: 0.5px solid #63687e;
+}
+
+.dashboard .theme-toggle {
+  padding: 0 20px 80px 20px;
+}
+
+.dashboard .theme-toggle .mode-container .mode-text {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.dashboard .theme-toggle .mode-container .btn {
+  margin-top: -5px;
+  float: right;
 }
 
 .card-container {
@@ -56,6 +76,7 @@ body {
       flex-wrap: nowrap;
   z-index: 1;
   width: 100%;
+  margin-top: -330px;
 }
 
 .overview-container {
@@ -437,7 +458,7 @@ body {
 }
 
 .overview-header {
-  padding: 18px;
+  padding: 18px 32px;
 }
 
 .overview-header h1 {
@@ -455,9 +476,11 @@ body {
 }
 
 .btn {
+  position: relative;
+  top: 1px;
   background-color: #ddd;
   width: 50px;
-  height: 20px;
+  height: 18px;
   padding: 8px;
   border-radius: 60px;
   display: -webkit-inline-box;
@@ -484,9 +507,6 @@ body {
 }
 
 @media screen and (min-width: 930px) {
-  hr {
-    display: none;
-  }
   .card-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -507,6 +527,35 @@ body {
   }
   .overview-card.red {
     width: 80%;
+  }
+  hr {
+    display: none;
+  }
+  .dashboard {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  .dashboard .social h1 {
+    font-size: 2rem;
+  }
+  .dashboard .theme-toggle {
+    padding: 0 65px 150px 20px;
+  }
+  .dashboard .theme-toggle .mode-container {
+    text-align: right;
+  }
+  .dashboard .theme-toggle .mode-container .mode-text {
+    position: relative;
+    top: -2px;
+    color: #63687e;
+    font-weight: 700;
+  }
+  .dashboard .theme-toggle .mode-container .btn {
+    position: relative;
+    top: 3px;
+    margin-top: 48px;
+    margin-left: 20px;
+    float: none;
   }
 }
 
@@ -541,6 +590,16 @@ body {
   .overview-card.red {
     width: 80%;
   }
+  .dashboard .theme-toggle .mode-container .mode-text {
+    color: #63687e;
+    font-weight: 700;
+  }
+  .dashboard .theme-toggle .mode-container .btn {
+    margin-left: 20px;
+    position: relative;
+    top: -2px;
+    float: right;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -566,14 +625,60 @@ body {
   .overview-card.red {
     width: 80%;
   }
+  .card-container {
+    margin-top: -260px;
+  }
+  .dashboard {
+    padding-bottom: 50px;
+  }
+  .dashboard .social h1 {
+    font-size: 1.3rem;
+  }
+  .dashboard .theme-toggle .mode-container .mode-text {
+    color: #63687e;
+    font-weight: 700;
+  }
+  .dashboard .theme-toggle .mode-container .btn {
+    margin-left: 20px;
+    position: relative;
+    top: 0px;
+    float: right;
+  }
+  .btn {
+    background-color: #ddd;
+    width: 40px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 60px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  .slider {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
   .overview-header {
-    padding: 20px 0 20px 20px 0;
-    width: 100%;
+    text-align: left;
   }
   .overview-header h1 {
     font-size: 1.4rem;
     color: #63687e;
     font-weight: 700;
+    padding: 0;
   }
 }
 

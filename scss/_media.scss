@@ -1,7 +1,4 @@
 @media screen and (min-width: 930px) {
-    hr {
-        display: none;
-    }
     .card-container {
         display: flex;
         flex-direction: row;
@@ -19,7 +16,37 @@
     .overview-card.red {
         width: 80%;
     }
-    
+    hr {
+        display: none;
+    }
+
+    .dashboard {
+        grid-template-columns: 70% 30%;
+        .social {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .theme-toggle {
+            padding: 0 65px 150px 20px;
+            .mode-container {
+                text-align: right;
+                .mode-text {
+                    position: relative;
+                    top: -2px;
+                    color: $dark-grayish-blue-text;
+                    font-weight: $font-weight-2;
+                }
+                .btn {
+                    position: relative;
+                    top: 3px;
+                    margin-top: 48px;
+                    margin-left: 20px;
+                    float: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 930px) {
@@ -53,6 +80,23 @@
     .overview-card.red {
         width: 80%;
     }
+    
+    .dashboard {
+        .theme-toggle {
+            .mode-container {
+                .mode-text {
+                    color: $dark-grayish-blue-text;
+                    font-weight: $font-weight-2;
+                }
+                .btn {
+                    margin-left: 20px;
+                    position: relative;
+                    top: -2px;
+                    float: right;
+                }
+            }
+        }
+    }
 
 }
 
@@ -84,13 +128,60 @@
         width: 80%;
     }
 
+    .card-container {
+        margin-top: -260px;
+    }
+    .dashboard {
+        padding-bottom: 50px;
+        .social {
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .theme-toggle {
+            .mode-container {
+                .mode-text {
+                    color: $dark-grayish-blue-text;
+                    font-weight: $font-weight-2;
+                }
+                .btn {
+                    margin-left: 20px;
+                    position: relative;
+                    top: 0px;
+                    float: right;
+                }
+            }
+        }
+    }
+    .btn {
+        background-color: #ddd;
+        width: 40px;
+        height: 15px;
+        padding: 8px;
+        border-radius: 60px;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .slider {
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
     .overview-header {
-        padding: 20px 0 20px 20px 0;
-        width: 100%;
+        text-align: left;
         h1 {
             font-size: 1.4rem;
             color: $dark-grayish-blue-text;
             font-weight: $font-weight-2;
+            padding: 0;
         }
     }
 }
