@@ -55,6 +55,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   z-index: 1;
+  width: 100%;
 }
 
 .overview-container {
@@ -62,6 +63,7 @@ body {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  width: 100%;
 }
 
 .facebook {

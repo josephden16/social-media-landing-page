@@ -50,11 +50,15 @@ body {
     flex-wrap: nowrap;
     // position: absolute;
     z-index: 1;
+    // margin-left: 20px;
+    width: 100%;
 }
 
 .overview-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    // margin-left: 10px;
+    width: 100%;
 }
 
 
