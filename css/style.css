@@ -65,15 +65,10 @@ body {
 }
 
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   z-index: 1;
   width: 100%;
   margin-top: -330px;
@@ -88,7 +83,7 @@ body {
 }
 
 .facebook {
-  width: 185px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -147,7 +142,7 @@ body {
 }
 
 .twitter {
-  width: 185px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -269,7 +264,7 @@ body {
 }
 
 .youtube {
-  width: 185px;
+  width: 200px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -513,66 +508,19 @@ body {
 
 @media screen and (min-width: 930px) {
   .card-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .overview-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
-  }
-  .overview-card {
-    width: 80%;
-  }
-  .overview-card.red {
-    width: 80%;
-  }
-  hr {
-    display: none;
-  }
-  .dashboard {
-    -ms-grid-columns: 70% 30%;
-        grid-template-columns: 70% 30%;
-  }
-  .dashboard .social h1 {
-    font-size: 2rem;
-  }
-  .dashboard .theme-toggle {
-    padding: 0 65px 150px 20px;
-  }
-  .dashboard .theme-toggle .mode-container {
-    text-align: right;
-  }
-  .dashboard .theme-toggle .mode-container .mode-text {
-    position: relative;
-    top: -2px;
-    color: #63687e;
-    font-weight: 700;
-  }
-  .dashboard .theme-toggle .mode-container .btn {
-    position: relative;
-    top: 3px;
-    margin-top: 48px;
-    margin-left: 20px;
-    float: none;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
   }
 }
 
 @media screen and (max-width: 930px) {
   .card-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
   .instagram {
     margin-top: 10px;
@@ -631,6 +579,10 @@ body {
     width: 80%;
   }
   .card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     margin-top: -260px;
   }
   .dashboard {
@@ -684,6 +636,56 @@ body {
     color: #63687e;
     font-weight: 700;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1029px) {
+  .card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+  .overview-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+  .overview-card {
+    width: 80%;
+  }
+  .overview-card.red {
+    width: 80%;
+  }
+  hr {
+    display: none;
+  }
+  .dashboard {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  .dashboard .social h1 {
+    font-size: 2rem;
+  }
+  .dashboard .theme-toggle {
+    padding: 0 65px 150px 20px;
+  }
+  .dashboard .theme-toggle .mode-container {
+    text-align: right;
+  }
+  .dashboard .theme-toggle .mode-container .mode-text {
+    position: relative;
+    top: -2px;
+    color: #63687e;
+    font-weight: 700;
+  }
+  .dashboard .theme-toggle .mode-container .btn {
+    position: relative;
+    top: 3px;
+    margin-top: 48px;
+    margin-left: 20px;
+    float: none;
   }
 }
 

@@ -1,60 +1,16 @@
 @media screen and (min-width: 930px) {
     .card-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .overview-container {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%;
     }
-
-    .overview-card {
-        width: 80%;
-    }
-
-    .overview-card.red {
-        width: 80%;
-    }
-    hr {
-        display: none;
-    }
-
-    .dashboard {
-        grid-template-columns: 70% 30%;
-        .social {
-            h1 {
-                font-size: 2rem;
-            }
-        }
-        .theme-toggle {
-            padding: 0 65px 150px 20px;
-            .mode-container {
-                text-align: right;
-                .mode-text {
-                    position: relative;
-                    top: -2px;
-                    color: $dark-grayish-blue-text;
-                    font-weight: $font-weight-2;
-                }
-                .btn {
-                    position: relative;
-                    top: 3px;
-                    margin-top: 48px;
-                    margin-left: 20px;
-                    float: none;
-                }
-            }
-        }
-    }
-
 }
+
 
 @media screen and (max-width: 930px) {
 
     .card-container {
-        display: flex;
-        flex-direction: column;
+       display: grid;
+       grid-template-columns: 100%;
     }
     .instagram {
         margin-top: 10px;
@@ -131,6 +87,8 @@
     }
 
     .card-container {
+        display: grid;
+        grid-template-columns: 100%;
         margin-top: -260px;
     }
     .dashboard {
@@ -186,4 +144,56 @@
             padding: 0;
         }
     }
+}
+
+@media screen and (min-width: 1029px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .overview-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .overview-card {
+        width: 80%;
+    }
+
+    .overview-card.red {
+        width: 80%;
+    }
+    hr {
+        display: none;
+    }
+
+    .dashboard {
+        grid-template-columns: 70% 30%;
+        .social {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .theme-toggle {
+            padding: 0 65px 150px 20px;
+            .mode-container {
+                text-align: right;
+                .mode-text {
+                    position: relative;
+                    top: -2px;
+                    color: $dark-grayish-blue-text;
+                    font-weight: $font-weight-2;
+                }
+                .btn {
+                    position: relative;
+                    top: 3px;
+                    margin-top: 48px;
+                    margin-left: 20px;
+                    float: none;
+                }
+            }
+        }
+    }
+
 }

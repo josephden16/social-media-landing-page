@@ -62,9 +62,8 @@ body {
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     z-index: 1;
     width: 100%;
     margin-top: -330px;
@@ -78,7 +77,7 @@ body {
 
 // card mixin
 @mixin card($color, $status) {
-    width: 185px;
+    width: 200px;
     text-align: center;
     margin: 30px auto;
     background-color: $light-grayish-blue-card-bg;
