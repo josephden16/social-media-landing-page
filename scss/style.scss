@@ -3,7 +3,8 @@
     @if ($color == "green") {
         color: $lime-green;
         font-weight: $font-weight-2;
-    } @else {
+    }
+    @if ($color == "red") {
         color: $bright-red;
         font-weight: $font-weight-2;
     }
@@ -184,6 +185,71 @@ body {
 
 }
 
+.overview-card.red {
+    margin: 20px auto;
+    padding: 15px;
+    width: 50%;
+    background-color: $light-grayish-blue-card-bg;
+    border-radius: 5px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .head {
+        span {
+            float: left;
+        }
+        img {
+            float: right;
+        }
+    }
+
+    .info {
+        margin-top: 60px;
+        .info-num {
+            float: left;
+        }
+        div {
+            .follower-status {
+                float: right;
+                padding: 5px;
+                @include progress("red");
+                img {
+                    margin: 3px;
+                }
+            }
+        }
+    } 
+}
+
+.overview-card:nth-of-type(3) {
+    .info {
+        .info-num {
+            margin-top: 6px;
+            font-size: 2rem;
+        }
+
+        div {
+            .follower-status {
+                float: right;
+                // padding: 1px;
+                @include progress("green");
+                img {
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}
+
+.overview-header {
+    padding: 18px;
+    h1 {
+        color: $dark-grayish-blue-text;
+        font-weight: $font-weight-2;
+    }
+}
 .info-num {
     font-size: 40px;
     font-weight: $font-weight-2;

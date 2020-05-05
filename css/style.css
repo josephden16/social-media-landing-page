@@ -373,6 +373,75 @@ body {
   margin: 3px;
 }
 
+.overview-card.red {
+  margin: 20px auto;
+  padding: 15px;
+  width: 50%;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.overview-card.red .head span {
+  float: left;
+}
+
+.overview-card.red .head img {
+  float: right;
+}
+
+.overview-card.red .info {
+  margin-top: 60px;
+}
+
+.overview-card.red .info .info-num {
+  float: left;
+}
+
+.overview-card.red .info div .follower-status {
+  float: right;
+  padding: 5px;
+  color: #dc414c;
+  font-weight: 700;
+}
+
+.overview-card.red .info div .follower-status img {
+  margin: 3px;
+}
+
+.overview-card:nth-of-type(3) .info .info-num {
+  margin-top: 6px;
+  font-size: 2rem;
+}
+
+.overview-card:nth-of-type(3) .info div .follower-status {
+  float: right;
+  color: #1db489;
+  font-weight: 700;
+}
+
+.overview-card:nth-of-type(3) .info div .follower-status img {
+  margin: 2px;
+}
+
+.overview-header {
+  padding: 18px;
+}
+
+.overview-header h1 {
+  color: #63687e;
+  font-weight: 700;
+}
+
 .info-num {
   font-size: 40px;
   font-weight: 700;
@@ -433,6 +502,9 @@ body {
   .overview-card {
     width: 80%;
   }
+  .overview-card.red {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -461,7 +533,10 @@ body {
     width: 50%;
   }
   .overview-card {
-    width: 60%;
+    width: 80%;
+  }
+  .overview-card.red {
+    width: 80%;
   }
 }
 
@@ -483,7 +558,19 @@ body {
         grid-template-columns: 100%;
   }
   .overview-card {
-    width: 75%;
+    width: 80%;
+  }
+  .overview-card.red {
+    width: 80%;
+  }
+  .overview-header {
+    padding: 20px 0 20px 20px 0;
+    width: 100%;
+  }
+  .overview-header h1 {
+    font-size: 1.4rem;
+    color: #63687e;
+    font-weight: 700;
   }
 }
 
