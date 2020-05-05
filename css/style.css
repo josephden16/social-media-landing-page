@@ -88,7 +88,7 @@ body {
 }
 
 .facebook {
-  width: 200px;
+  width: 185px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -147,7 +147,7 @@ body {
 }
 
 .twitter {
-  width: 200px;
+  width: 185px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -212,7 +212,11 @@ body {
   background-color: #f0f2fa;
   padding: 20px;
   border-radius: 5px;
-  border-top: 4px solid #1ca0f2;
+  border-top: 5px solid transparent;
+  -o-border-image: linear-gradient(to right, #fdc468 0%, #df4996 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+     border-image: linear-gradient(to right, #fdc468 0%, #df4996 100%);
+  border-image-slice: 1;
   margin-top: 200px;
 }
 
@@ -265,7 +269,7 @@ body {
 }
 
 .youtube {
-  width: 200px;
+  width: 185px;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -684,7 +688,8 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 18px;
+  margin: 30px 0;
   text-align: center;
 }
 
