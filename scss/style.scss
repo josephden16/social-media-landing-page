@@ -66,18 +66,19 @@ body {
     grid-template-columns: 25% 25% 25% 25%;
     z-index: 1;
     width: 100%;
-    margin-top: -330px;
+    margin: -330px auto auto auto;
 }
 
 .overview-container {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
+    margin: auto;
 }
 
 // card mixin
 @mixin card($color, $status) {
-    width: 200px;
+    width: 70%;
     text-align: center;
     margin: 30px auto;
     background-color: $light-grayish-blue-card-bg;
@@ -124,7 +125,7 @@ body {
 }
 
 .instagram {
-    width: 200px;
+    width: 70%;
     text-align: center;
     margin: 30px auto;
     background-color: $light-grayish-blue-card-bg;
@@ -284,7 +285,6 @@ body {
         div {
             .follower-status {
                 float: right;
-                // padding: 1px;
                 @include progress("green");
                 img {
                     margin: 2px;
@@ -295,7 +295,7 @@ body {
 }
 
     .overview-header {
-        padding: 18px 32px;
+        padding: 30px 20px;
         h1 {
             color: $dark-grayish-blue-text;
             font-weight: $font-weight-2;
@@ -315,7 +315,7 @@ body {
 .btn {
     position: relative;
     top: 1px;
-    background-color: #ddd;
+    background-color: rgb(165, 164, 164);
     width: 50px;
     height: 18px;
     padding: 8px;

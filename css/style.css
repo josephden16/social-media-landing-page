@@ -71,7 +71,7 @@ body {
       grid-template-columns: 25% 25% 25% 25%;
   z-index: 1;
   width: 100%;
-  margin-top: -330px;
+  margin: -330px auto auto auto;
 }
 
 .overview-container {
@@ -80,10 +80,11 @@ body {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   width: 100%;
+  margin: auto;
 }
 
 .facebook {
-  width: 200px;
+  width: 70%;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -142,7 +143,7 @@ body {
 }
 
 .twitter {
-  width: 200px;
+  width: 70%;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -201,7 +202,7 @@ body {
 }
 
 .instagram {
-  width: 200px;
+  width: 70%;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -264,7 +265,7 @@ body {
 }
 
 .youtube {
-  width: 200px;
+  width: 70%;
   text-align: center;
   margin: 30px auto;
   background-color: #f0f2fa;
@@ -457,7 +458,7 @@ body {
 }
 
 .overview-header {
-  padding: 18px 32px;
+  padding: 30px 20px;
 }
 
 .overview-header h1 {
@@ -478,7 +479,7 @@ body {
 .btn {
   position: relative;
   top: 1px;
-  background-color: #ddd;
+  background-color: #a5a4a4;
   width: 50px;
   height: 18px;
   padding: 8px;
@@ -653,10 +654,10 @@ body {
         grid-template-columns: 25% 25% 25% 25%;
   }
   .overview-card {
-    width: 80%;
+    width: 70%;
   }
   .overview-card.red {
-    width: 80%;
+    width: 70%;
   }
   hr {
     display: none;
