@@ -17,6 +17,9 @@
         width: 50%;
     }
 
+    .border-top {
+        width: 62%;
+    }
     .youtube {
         margin-top: 10px;
         width: 50%;
@@ -68,6 +71,10 @@
     .instagram {
         width: 72%;
     }
+
+    .border-top {
+        width: 84%;
+    }
     .youtube {
         width: 72%;
     }
@@ -75,13 +82,15 @@
     .overview-container {
         grid-template-columns: 100%;
         // margin-left: 20px;
-
     }
 
     .overview-card {
         width: 80%;
     }
 
+    .overview-header {
+        padding: 20px 20px;
+    }
     .overview-card.red {
         width: 80%;
     }
@@ -160,7 +169,6 @@
     .overview-card {
         width: 70%;
     }
-
     .overview-card.red {
         width: 70%;
     }

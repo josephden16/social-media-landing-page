@@ -76,6 +76,7 @@ body {
     margin: auto;
 }
 
+
 // card mixin
 @mixin card($color, $status) {
     width: 70%;
@@ -124,6 +125,18 @@ body {
     @include card($twitter, $lime-green);
 }
 
+.instagram:before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, #fdc468 0%, #df4996 100%);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    top: -9px;
+    left: 0px;
+    z-index: -1;
+  }
+
 .instagram {
     width: 70%;
     text-align: center;
@@ -165,8 +178,7 @@ body {
         }
     }
 }
-
-
+  
 .youtube {
     @include card($youtube, $bright-red);
 }

@@ -51,7 +51,7 @@ function move() {
             body.style.color = "#000";
             dashboard.style.backgroundColor ="hsl(225, 100%, 98%)";
             totalFollowers.style.color = "hsl(228, 12%, 44%)";
-            overviewHeader.style.color = "#fff";
+            overviewHeader.style.color = "hsl(228, 12%, 44%)";
             overviewCard.forEach(function(elm) {
                 elm.style.backgroundColor = "hsl(227, 47%, 96%)";
             });            
